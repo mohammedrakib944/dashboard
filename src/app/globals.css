@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .dropdownUi {
+    @apply dropdown-content z-[1] menu p-2 shadow-lg bg-accent text-white border border-white rounded-lg w-fit min-w-24;
+  }
+}

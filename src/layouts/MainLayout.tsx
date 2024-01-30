@@ -9,8 +9,8 @@ const MainLayout = ({ children }: TChildren) => {
       <div className="drawer lg:drawer-open">
         <input id="sidebar" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          {/* Page content here */}
           <Topbar />
+          {/* Page content here */}
           <div className="p-5">{children}</div>
         </div>
         {/* Sidebar */}
