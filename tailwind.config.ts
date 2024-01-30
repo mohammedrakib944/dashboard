@@ -14,7 +14,9 @@ const config: Config = {
         dashboard: {
           primary: "#003A46",
           secondary: "#8ABAC5",
+          accent: "#006980",
           "base-100": "#F7F7F7",
+          "text-base-content": "#003A46",
         },
       },
     ],
