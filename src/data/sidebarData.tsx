@@ -1,6 +1,10 @@
 import { BiSolidDashboard } from "react-icons/bi";
 import { GrTransaction } from "react-icons/gr";
 import { BsBank2, BsPeopleFill } from "react-icons/bs";
+import { MdWebStories } from "react-icons/md";
+import { IoServerSharp } from "react-icons/io5";
+import { BiSolidWidget } from "react-icons/bi";
+import { SiOctanerender } from "react-icons/si";
 import { RiTakeawayFill } from "react-icons/ri";
 import { TbError404 } from "react-icons/tb";
 
@@ -14,17 +18,17 @@ export const sideLinks = [
   },
   {
     id: 2,
-    text: "Transactions",
-    icon: <GrTransaction />,
+    text: "Client (CSR)",
+    icon: <MdWebStories />,
     active: false,
-    link: "/transaction",
+    link: "/client",
   },
   {
     id: 3,
-    text: "Banking",
-    icon: <BsBank2 />,
+    text: "Server (SSR)",
+    icon: <IoServerSharp />,
     active: false,
-    link: "/banking",
+    link: "/server",
   },
   {
     id: 4,

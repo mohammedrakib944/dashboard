@@ -3,7 +3,7 @@ import React from "react";
 import { MdOutlineAutoGraph } from "react-icons/md";
 import List from "../List/List";
 import { usePathname } from "next/navigation";
-import { sideLinks } from "./sidebarData";
+import { sideLinks } from "../../data/sidebarData";
 
 const Sidebar = () => {
   const pathName = usePathname();

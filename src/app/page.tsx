@@ -1,11 +1,16 @@
+import React from "react";
+import Card from "@/components/Card/Card";
+import { dashboardData } from "@/data/homeData";
+
 export default function Home() {
   return (
-    <main className=" ">
-      <button className="bg-primary text-secondary">Button</button>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae tempora ea
-      nisi dolorum. Aspernatur qui nulla voluptate voluptas laboriosam, maiores
-      distinctio architecto deserunt molestias laudantium iure iusto asperiores
-      temporibus corporis.
+    <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      {/* Dashboard data */}
+      {dashboardData?.map((item) => (
+        <React.Fragment key={item.id}>
+          <Card data={item} />
+        </React.Fragment>
+      ))}
     </main>
   );
 }
