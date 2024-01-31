@@ -18,17 +18,17 @@ export const sideLinks = [
   },
   {
     id: 2,
-    text: "Client (CSR)",
+    text: "Products (CSR)",
     icon: <MdWebStories />,
     active: false,
-    link: "/client",
+    link: "/products",
   },
   {
     id: 3,
-    text: "Server (SSR)",
+    text: "Articles (ISR)",
     icon: <IoServerSharp />,
     active: false,
-    link: "/server",
+    link: "/articles",
   },
   {
     id: 4,

@@ -4,7 +4,7 @@ import useGetProducts from "@/hooks/useGetProducts";
 
 const Client = () => {
   const products = useGetProducts(); // custome hoook that fetch products
-  console.log("Products: ", products);
+
   let Products = null;
 
   if (products) {
@@ -17,7 +17,7 @@ const Client = () => {
               src={product.image}
               alt=""
             />
-            <p className="text-sm text-accent pt-2">{product.category}</p>
+            <p className="text-sm text-accent pt-2 pb-2">{product.category}</p>
             <p className="font-semibold">{product.title}</p>
             <p className="font-bold text-accent mt-2">
               Price: ${product.price}
@@ -32,7 +32,7 @@ const Client = () => {
 
   return (
     <div>
-      <h2 className="text-lg font-bold mb-5">
+      <h2 className="text-lg font-bold mb-4">
         <span>All Products</span>
         <span className="font-light text-sm"> - Client side rendering</span>
       </h2>
