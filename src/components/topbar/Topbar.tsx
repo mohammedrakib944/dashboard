@@ -10,6 +10,7 @@ import Avatar from "@/assets/img/avatar.jpg";
 import Flag from "@/assets/img/flag.png";
 import { CgProfile } from "react-icons/cg";
 import { IoMdSettings } from "react-icons/io";
+import Link from "next/link";
 
 const Topbar = () => {
   return (
@@ -74,9 +75,9 @@ const Topbar = () => {
           </div>
           <ul tabIndex={0} className="dropdownUi">
             <li>
-              <a>
+              <Link href="/profile">
                 <CgProfile /> Profile
-              </a>
+              </Link>
             </li>
             <li>
               <a>
