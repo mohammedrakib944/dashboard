@@ -10,12 +10,13 @@ async function getCustomers() {
 
 const UsersPage = async () => {
   const users: any = await getCustomers();
+
   let Users = null;
 
   if (users) {
     Users = (
       <div className="overflow-x-auto bg-white rounded-lg shadow-sm">
-        <table className="table table-zebra">
+        <table className="table">
           {/* head */}
           <thead>
             <tr>
@@ -23,6 +24,8 @@ const UsersPage = async () => {
               <th>Name</th>
               <th>Usrname</th>
               <th>Email</th>
+              <th>Phone</th>
+              <th>Website</th>
             </tr>
           </thead>
           <tbody>
@@ -33,6 +36,8 @@ const UsersPage = async () => {
                 <td>{user.name}</td>
                 <td>{user.username}</td>
                 <td>{user.email}</td>
+                <td>{user.phone}</td>
+                <td>{user.website}</td>
               </tr>
             ))}
           </tbody>
