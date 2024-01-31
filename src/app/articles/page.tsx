@@ -18,7 +18,7 @@ const Articles = async () => {
 
   if (articles) {
     Articles = (
-      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {articles?.map((article: any) => (
           <article
             className="max-w-[400px] bg-white p-5 rounded-lg"
@@ -38,7 +38,7 @@ const Articles = async () => {
         <span>Articles</span>
         <span className="font-light text-sm">
           {" "}
-          - Incremental Static Regeneration , Revalidate in every 10 seconds
+          - Incremental Static Regeneration , Regeneration in every 10 seconds
         </span>
       </h2>
       {Articles}

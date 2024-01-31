@@ -9,16 +9,18 @@ const Client = () => {
 
   if (products) {
     Products = (
-      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2 md:gap-4">
         {products.map((product: any) => (
           <div className="bg-white p-5 rounded-lg" key={product.id}>
             <img
-              className="w-full h-[200px] object-contain"
+              className="w-full h-[120px] lg:h-[200px] object-contain"
               src={product.image}
               alt=""
             />
             <p className="text-sm text-accent pt-2 pb-2">{product.category}</p>
-            <p className="font-semibold">{product.title}</p>
+            <p className="font-semibold text-sm md:text-base">
+              {product.title}
+            </p>
             <p className="font-bold text-accent mt-2">
               Price: ${product.price}
             </p>

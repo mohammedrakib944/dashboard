@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const Topbar = () => {
   return (
-    <nav className="w-full bg-white px-5 py-3 shadow-sm flex items-center justify-between">
+    <nav className="w-full bg-white px-5 py-3 shadow-sm flex items-center justify-between sticky top-0">
       <div className="flex gap-4 items-center">
         {/* Hamburger Menu */}
         <label htmlFor="sidebar" className="drawer-button">
@@ -46,11 +46,11 @@ const Topbar = () => {
           <div
             tabIndex={0}
             role="button"
-            className="p-3 bg-accent/20 rounded-full text-xl shadow-none text-accent"
+            className="p-3 bg-accent/10 rounded-full text-xl shadow-none text-accent"
           >
             <HiMiniBellAlert />
           </div>
-          <ul tabIndex={0} className="dropdownUi">
+          <ul tabIndex={0} className="dropdownUi relative z-20">
             <li>
               <a>Notification1</a>
             </li>
