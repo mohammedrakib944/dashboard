@@ -24,18 +24,18 @@ export const sideLinks = [
     link: "/products",
   },
   {
+    id: 4,
+    text: "Users (SSR)",
+    icon: <BsPeopleFill />,
+    active: false,
+    link: "/users",
+  },
+  {
     id: 3,
     text: "Articles (ISR)",
     icon: <IoServerSharp />,
     active: false,
     link: "/articles",
-  },
-  {
-    id: 4,
-    text: "Customers",
-    icon: <BsPeopleFill />,
-    active: false,
-    link: "/customers",
   },
   {
     id: 6,

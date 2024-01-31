@@ -38,7 +38,7 @@ const Articles = async () => {
         <span>Articles</span>
         <span className="font-light text-sm">
           {" "}
-          - Incremental Static Regeneration
+          - Incremental Static Regeneration , Revalidate in every 10 seconds
         </span>
       </h2>
       {Articles}

@@ -27,7 +27,7 @@ const Client = () => {
       </div>
     );
   } else {
-    Products = <Loader title="Product loading..." />;
+    Products = <Loader title="Products loading..." />;
   }
 
   return (
