@@ -28,7 +28,7 @@ const UsersPage = async () => {
           <tbody>
             {/* rows */}
             {users?.map((user: any) => (
-              <tr>
+              <tr key={user.id}>
                 <th>{user.id}</th>
                 <td>{user.name}</td>
                 <td>{user.username}</td>
