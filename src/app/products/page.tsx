@@ -1,6 +1,7 @@
 "use client";
 import Loader from "@/components/Loader/Loading";
 import useGetProducts from "@/hooks/useGetProducts";
+import Link from "next/link";
 
 const Client = () => {
   const products = useGetProducts(); // custome hoook that fetch products
@@ -34,6 +35,14 @@ const Client = () => {
 
   return (
     <div>
+      <div className="text-sm breadcrumbs pb-5">
+        <ul>
+          <li>
+            <Link href="/">Dashboard</Link>
+          </li>
+          <li>Products</li>
+        </ul>
+      </div>
       <h2 className="text-lg font-bold mb-4">
         <span>All Products</span>
         <span className="font-light text-sm"> - Client side rendering</span>

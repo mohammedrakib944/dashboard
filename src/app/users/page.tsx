@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 async function getCustomers() {
@@ -47,6 +48,14 @@ const UsersPage = async () => {
   }
   return (
     <div>
+      <div className="text-sm breadcrumbs pb-5">
+        <ul>
+          <li>
+            <Link href="/">Dashboard</Link>
+          </li>
+          <li>Users</li>
+        </ul>
+      </div>
       <h2 className="text-lg font-bold mb-4">
         <span>Users </span>
         <span className="font-light text-sm">- Server side rendering</span>

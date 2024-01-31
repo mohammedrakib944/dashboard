@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 async function getArticles() {
@@ -34,10 +35,17 @@ const Articles = async () => {
 
   return (
     <div>
+      <div className="text-sm breadcrumbs pb-5">
+        <ul>
+          <li>
+            <Link href="/">Dashboard</Link>
+          </li>
+          <li>Articles</li>
+        </ul>
+      </div>
       <h2 className="text-lg font-bold mb-4">
-        <span>Articles</span>
+        <span>Articles </span>
         <span className="font-light text-sm">
-          {" "}
           - Incremental Static Regeneration , Regeneration in every 10 seconds
         </span>
       </h2>

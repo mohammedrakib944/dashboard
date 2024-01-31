@@ -11,7 +11,9 @@ const MainLayout = ({ children }: TChildren) => {
         <div className="drawer-content">
           <Topbar />
           {/* Page content here */}
-          <div className="py-5 px-5 md:px-8 lg:px-10 xl:px-20">{children}</div>
+          <div className="pb-5 pt-2 px-5 md:px-8 lg:px-10 xl:px-20">
+            {children}
+          </div>
         </div>
         {/* Sidebar */}
         <Sidebar />
