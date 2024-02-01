@@ -15,7 +15,7 @@ const Sidebar = () => {
         aria-label="close sidebar"
         className="drawer-overlay"
       ></label>
-      <ul className="p-4 w-72 min-h-full bg-primary text-secondary">
+      <ul className="p-4 w-72 min-h-full bg-primary text-secondary relative">
         <h2 className="text-white flex gap-2 items-center py-2 px-2 mb-5">
           <span className="text-4xl">
             <MdOutlineAutoGraph />
@@ -33,6 +33,8 @@ const Sidebar = () => {
             />
           </li>
         ))}
+
+        <p className="absolute bottom-4 text-accent">@2024 myselfrakib.com</p>
       </ul>
     </div>
   );

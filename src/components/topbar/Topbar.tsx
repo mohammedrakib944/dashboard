@@ -10,6 +10,7 @@ import Avatar from "@/assets/img/avatar.jpg";
 import Flag from "@/assets/img/flag.png";
 import { CgProfile } from "react-icons/cg";
 import { IoMdSettings } from "react-icons/io";
+import { CiLogout } from "react-icons/ci";
 import Link from "next/link";
 
 const Topbar = () => {
@@ -82,6 +83,11 @@ const Topbar = () => {
             <li>
               <a>
                 <IoMdSettings /> Settings
+              </a>
+            </li>
+            <li>
+              <a>
+                <CiLogout /> Logout
               </a>
             </li>
           </ul>
