@@ -38,11 +38,13 @@ const Topbar = () => {
           Add new cash book
         </Button>
 
+        {/* Language selection - it sould be select->option */}
         <div className="hidden md:flex px-8 cursor-pointer gap-2 text-accent text-sm font-semibold">
           <Image src={Flag} width="25" className="object-contain" alt="Lang" />{" "}
           EN
         </div>
 
+        {/* Notification Dropdown */}
         <div className="hidden md:block dropdown dropdown-hover dropdown-end">
           <div
             tabIndex={0}
@@ -61,6 +63,7 @@ const Topbar = () => {
           </ul>
         </div>
 
+        {/* Profile Dropdown */}
         <div className="dropdown dropdown-hover dropdown-end">
           <div
             tabIndex={0}

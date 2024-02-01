@@ -34,7 +34,9 @@ const Sidebar = () => {
           </li>
         ))}
 
-        <p className="absolute bottom-4 text-accent">@2024 myselfrakib.com</p>
+        <p className="absolute bottom-4 px-2 text-accent">
+          @2024 myselfrakib.com
+        </p>
       </ul>
     </div>
   );
